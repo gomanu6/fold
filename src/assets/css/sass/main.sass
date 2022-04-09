@@ -1,2 +1,47 @@
+$border-radius: 0.8em
+
+
 body
-    background-color: limegreen
+    // background-color: limegreen
+    box-sizing: border-box
+
+.container
+    display: grid
+    grid-template-columns: 2fr 1fr
+    grid-gap: 2em
+    height: 450px
+
+    .left
+        background-color: purple
+        border-radius: $border-radius
+    
+    .right
+        background-color: blue
+        display: flex
+        flex-flow: column wrap
+        width: 100%
+        border-radius: .5em
+        
+
+
+        .right_items
+            height: 30%
+            width: 100%
+            background-color: green
+            border: 3px solid black
+            box-sizing: border-box
+        
+
+.testimonials
+    display: flex
+    flex-flow: row wrap
+    width: 100%
+    justify-content: space-around
+
+    div
+        margin-top: 2em
+        width: 8em
+        height: 8em
+        background-color: yellow
+        border: 2px solid black
+        border-radius: 50%
